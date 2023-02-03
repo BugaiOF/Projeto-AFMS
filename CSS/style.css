@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+/* responsividade do heade  r */
+@media (max-width: 768px) {
+    .slide {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .slide {
+      height: 200px;
+    }
+  }
+  
+
 /* inicio do header */
 * {
     padding: 0;
@@ -114,18 +128,46 @@ header {
 }
 /* FIM DO HEADER */
 /* inicio dos cards */
-#cards {
-    border: 1px solid black;
-    height: 300px;
+
+.carousel {
     display: flex;
-}
-
-#cardsImg {
-    border: 1px solid black;
-    height: 300px;
-    width: 300px;
-}
-
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .slide:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+  .slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+  }
+  
+  .slide:hover .slide-text {
+    display: block;
+  }
+  
 /* fim dos cards */
 /* inicio do container */
 #containerAfms {
