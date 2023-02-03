@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+/* inicio do header */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+    background-color: #a855f7;
+    box-shadow: 0px 3px 10px #797984;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between; 
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #f8fafc;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link  {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #f8fafc;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    background-color: #bf46ef;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #f8fafc;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and ( max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .login-button {
+        display: none;   
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        cursor: pointer;
+        border: none;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .mobile-menu .login-button button{
+        width: 100% ;
+    }
+
+    .open {
+        display: block;
+    }
+}
+/* FIM DO HEADER */
+/* inicio dos cards */
+#cards {
+    border: 1px solid black;
+    height: 300px;
+    display: flex;
+}
+
+#cardsImg {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+}
+
+/* fim dos cards */
+/* inicio do container */
+#containerAfms {
+    padding-top:5rem;
+    border: 1px solid black;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 700px;
+}
+
+#afms {
+    border: 1px solid black;
+    height: 300px;
+    width: 300px;
+    
+}
