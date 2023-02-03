@@ -171,17 +171,24 @@ header {
 /* fim dos cards */
 /* inicio do container */
 #containerAfms {
-    padding-top:5rem;
-    border: 1px solid black;
-    height: 800px;
+    padding-top:3rem;
     display: flex;
     flex-wrap: wrap;
-    min-width: 700px;
-}
-
-#afms {
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
     border: 1px solid black;
+    height: 1000;
+  }
+  
+  #afms {
+    width: 30%;
     height: 300px;
-    width: 300px;
     
-}
+    margin: 0 1.5% 3px;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+/* border: 1px solid black; */
