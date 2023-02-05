@@ -19,6 +19,7 @@
                     <li class="nav-item"><a href="#" class="nav-link">Personagens</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Lore</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Criador</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="favorites-link">Favoritos</a></li>
                 </ul>
             </div>
 
@@ -36,27 +37,27 @@
                 <li class="nav-item"><a href="#" class="nav-link">Criador</a></li>
             </ul>
 
-            <div class="login-button"><button><a href="#">Entrar</a></button></div>
+            <div class="login-button"><button><a href="login.html">Entrar</a></button></div>
         </div>
     </header>
     <main>
         <section>
             <div class="carousel">
                 <div class="slide">
-                  <img src="Tom Clancy's The Division® 22023-1-13-0-23-0.jpg" alt="Image 1">
+                  <img src="IMAGES/one-piece.jpg" alt="Image 1">
                   <div class="slide-text">one piece</div>
                 </div>
                 <div class="slide">
-                  <img src="Tom Clancy's The Division® 22023-1-13-0-23-0.jpg" alt="Image 2">
-                  <div class="slide-text">T232323</div>
+                  <img src="IMAGES/evangelion.jpg" alt="Image 2">
+                  <div class="slide-text">Evangelion</div>
                 </div>
                 <div class="slide">
-                  <img src="Tom Clancy's The Division® 22023-1-13-0-23-0.jpg" alt="Image 3">
-                  <div class="slide-text">T444444</div>
+                  <img src="IMAGES/oregairu.jpg" alt="Image 3">
+                  <div class="slide-text">Oregairu</div>
                 </div>
                 <div class="slide">
-                  <img src="Tom Clancy's The Division® 22023-1-13-0-23-0.jpg" alt="Image 4">
-                  <div class="slide-text">Te55556656</div>
+                  <img src="IMAGES/alderaminOnTheSky.jpg" alt="Image 4">
+                  <div class="slide-text">Alderamin On The Sky</div>
                 </div>
                 <div class="slide">
                   <img src="Tom Clancy's The Division® 22023-1-13-0-23-0.jpg" alt="Image 5">
@@ -70,19 +71,51 @@
         </section>
         <section>   
             <div id="containerAfms">
-                <div id="afms">1</div>
-                <div id="afms">2</div>
-                <div id="afms">3</div>
-                <div id="afms">4</div>
-                <div id="afms">5</div>
-                <div id="afms">6</div>
-                <div id="afms">7</div>
-                <div id="afms">8</div>
-                <div id="afms">9</div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img1">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img2">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img3">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img4">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img5">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img6">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img7">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img8">Favoritar</button>
+                </div>
+                <div id="afms">
+                    <img src="img1.jpg" alt="Image 1">
+                    <button class="favorite-button" data-id="img9">Favoritar</button>
+                </div>
 <!--                 <div id="afms">10</div>
                 <div id="afms">12</div> -->
+                <div id="favorites-section">
+                    <h3>Favoritos</h3>
+                    <ul id="favorites-list"></ul>
+                  </div>
             </div>
         </section>
+        
     </main>
     <script src="js/script.js"></script>
 </body>
