@@ -112,3 +112,11 @@ header {
         display: block;
     }
 }
+
+/* imagens */
+
+.content-left {
+    border: 1px solid black;
+    height: 100vh;
+    width: 100vw;
+}

@@ -8,6 +8,7 @@ function menuShow(){
         document.querySelector('.icon').src = "assets/images/close_white_36dp.svg" 
     }
 }
+/* menu responsivo */
 /* carrosel */
 const carousel = document.querySelector('.carousel');
 const slides = Array.from(carousel.children);
@@ -48,7 +49,7 @@ nextBtn.addEventListener('click'), e => {
 }
 
 /* favoritar */
-document.addEventListener("DOMContentLoaded", function() {
+/* document.addEventListener("DOMContentLoaded", function() {
   // Armazena os itens favoritados em um array
   var favorites = [];
 
@@ -72,4 +73,4 @@ document.addEventListener("DOMContentLoaded", function() {
       list.appendChild(item);
     }
   }
-});
+}); */
