@@ -24,6 +24,12 @@ header {
 
 .logo h1 {
     color: #f8fafc;
+    text-decoration: none;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #f8fafc;
 }
 
 .nav-list ul {
@@ -118,5 +124,16 @@ header {
 .content-left {
     border: 1px solid black;
     height: 100vh;
-    width: 100vw;
+    width: 20rem;
+}
+
+#posterFirts {
+    border: 1px solid red;
+    height: 20rem;
+    width: 100%;
+}
+
+.content-right {
+    border: 1px solid blue;
+    height: 100vh;
 }
