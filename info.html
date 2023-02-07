@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/info.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- icons -->
     <title>Document</title>
 </head>
 <body>
@@ -53,8 +54,19 @@
                         <td>
                             <div class="content-left">
                                 <img src="IMAGES/ballroomeyoukoso.jpg" alt="" id="posterFirts">
-                                <div>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci velit minus quisquam perferendis molestiae ex in quis commodi itaque recusandae doloremque beatae facilis eos hic vero suscipit, cum deserunt pariatur!
+                                <div class="heart">
+                                    <button onclick="heart()" class="btn-Heart">
+                                        <span class="material-symbols-outlined"> favorite </span>
+                                        <div id="countDisplay">Corações: 0</div>
+                                    </button>
+                                </div>
+                                <div id="infosContent">
+                                    <h4>Informações</h4>
+                                    <p>Episódios: 24</p>
+                                    <p>Status: Finalizado</p>
+                                    <p>Lançamento: 2017</p>
+                                    <p>Origem: Manga</p>
+                                    <p>Genêros: Comédia, Drama, Romance, Esportes</p>
                                 </div>
                             </div> 
                         </td>
@@ -69,5 +81,6 @@
             </div>
         </section>
     </main>
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>campo de testes</title>
+</head>
+<body>
+    <button onclick="heart()">Clique aqui para adicionar um coração</button>
+    <div id="countDisplay">Corações: 0</div>
+    <script>
+let count = Number(localStorage.getItem('count')) || 0;
+        document.getElementById("countDisplay").innerHTML = `Corações: ${count}`;
+
+        function heart() {
+        count++;
+        localStorage.setItem('count', count);
+        document.getElementById("countDisplay").innerHTML = `Corações: ${count}`;
+}
+    </script>
+</body>
+</html> 

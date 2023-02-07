@@ -163,6 +163,20 @@ h1 a {
     height: 328px;
 }
 
+.btn-Heart {
+
+}
+
+.heart span{
+    width: 220px;
+    color: red;
+    background-color: darkgray;
+}
+
+#infosContent  {
+    
+}
+
 .content-right {
     border: 1px solid blue;
     height: 100vh;
