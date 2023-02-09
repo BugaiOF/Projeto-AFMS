@@ -174,10 +174,50 @@ h1 a {
 }
 
 #infosContent  {
-    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .content-right {
     border: 1px solid blue;
     height: 100vh;
+}
+
+#navHorizon {
+    border: greenyellow 1px solid;
+    text-decoration: none;
+    display: flex;
+    
+
+}
+
+#navHorizon ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    
+}
+
+#navHorizon a{
+    text-decoration: none;
+}
+
+#synopsis h2{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#synopsis p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1rem;
 }
