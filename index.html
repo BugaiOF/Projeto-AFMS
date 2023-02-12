@@ -5,40 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <title>os melhores da 7° arte</title>
 </head>
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <h1>logo</h1>
-            </div>
-
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="#" class="nav-link">Personagens</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Lore</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Criador</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Favoritos</a></li>
-                </ul>
-            </div>
-
-            <div class="login-button"><button><a href="HTML/login.html">Entrar</a></button></div>
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/images/menu_white_36dp.svg" alt="loading"></button>
-            </div>
-        </nav>
-
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Personagens</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Lore</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Criador</a></li>
-            </ul>
-
-            <div class="login-button"><button><a href="HTML/login.html">Entrar</a></button></div>
-        </div>
-    </header>
+   <header>
+    <a href="#" class="logo">logo</a>
+    <div class="navigation">
+      <ul class="menu">
+        <div class="close-btn"></div>
+        <li class="menu-item"><a href="#">Home</a></li>
+        <li class="menu-item">
+          <a class="sub-btn" href="#">Mangas <i class="fas fa-angle-down"></i></a>
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="#">Sub Item 01</a></li>
+            <li class="sub-item"><a href="#">Sub Item 02</a></li>
+            <li class="sub-item"><a href="#">Sub Item 03</a></li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="sub-btn" href="#">Personagens <i class="fas fa-angle-down"></i></a>
+          <ul class="sub-menu">
+            <li class="sub-item"><a href="#">One piece</a></li>
+            <li class="sub-item"><a href="#">ballroom e youkoso</a></li>
+            <li class="sub-item"><a href="#">Oregairu</a></li>
+            <li class="sub-item"><a href="#">alderamin On TheSky</a></li>
+            <li class="sub-item more">
+              <a class="more-btn" href="#">More Items <i class="fas fa-angle-right"></i></a>
+              <ul class="more-menu">
+                <li class="more-item"><a href="#">More Item 01</a></li>
+                <li class="more-item"><a href="#">More Item 02</a></li> 
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">Services</a></li>
+        <li class="menu-item"><a href="#">Sobre</a></li>
+        <li class="menu-item"><a href="#">Criador</a></li>
+      </ul>
+    </div>
+    <div class="menu-btn"></div>
+   </header>
     <main>
         <section> 
             <div class="carousel" >
@@ -196,8 +204,8 @@
               </div>
             <!-- https://images.unsplash.com/photo-1520839090488-4a6c211e2f94?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=38951b8650067840307cba514b554ba5&auto=format&fit=crop&w=1350&q=80 -->
         </section>
-    
     </main>
     <script src="js/script.js"></script>
+
 </body>
 </html>

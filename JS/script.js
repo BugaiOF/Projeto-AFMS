@@ -1,13 +1,28 @@
-function menuShow(){
-    let menuMobile = document.querySelector('.mobile-menu')
-    if (menuMobile.classList.contains('open')) {
-        menuMobile.classList.remove('open');
-        document.querySelector('.icon').src = "assets/images/menu_white_36dp.svg" 
-    }else {
-        menuMobile.classList.add('open')
-        document.querySelector('.icon').src = "assets/images/close_white_36dp.svg" 
-    }
-}
+     //jquery for toggle dropdown menus
+     $(document).ready(function(){
+        //toggle sub menus
+        $(".sub-btn").click(function(){
+            $(this).next(".sub-menu").slideToggle();
+        });
+
+        //toggle more menus
+        $(".more-btn").click(function(){
+            $(this).next(".more-menu").slideToggle();
+        });
+    });
+
+    //JS for responsive navigation
+    let menu = document.querySelector(".menu");
+    let menuBtn = document.querySelector(".menu-btn");
+    let closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
 /* menu responsivo */
 /* carrosel */
 
