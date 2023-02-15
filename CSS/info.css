@@ -305,7 +305,7 @@ header{
 }
 
 .btn-Heart {
-
+  
 }
 
 .heart span{
@@ -343,6 +343,7 @@ header{
 
 #navHorizon a{
     text-decoration: none;
+    color: inherit;
 }
 
 #synopsis h2{
