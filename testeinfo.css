@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;     
+    color: white;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black), url('IMAGES/backOnepiece.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#principalContainer{
+    display: flex;
+    width: 95vw;
+    height: 60%;
+    margin: 0 auto;
+}
+
+#containerLeft {
+    display: flex;
+    border: 1px solid red;
+    height: 100vh;
+    width: 20rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#containerLeft #poster {
+    display: flex;
+    height: 25em;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#containerMiddle {
+    display: flex;
+    border: 1px solid green;
+    height: 100vh;
+    width: 70vw;
+}
+
+#contentMiddle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    margin-left: 2rem;
+}
+
+#contentMiddle > h1{
+    font-weight: 500;
+    font-size: 2rem;
+}
+#contentMiddle ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    
+}
+
+#contentMiddle p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: rem;
+    padding-right: rem;
+    font-size: 1rem;
+}
+
+#btn{
+    width: 15rem;
+    height: 3rem;
+    border-radius: 50px;
+    background-color: green;
+    cursor: pointer;
+} 
+
+#btn:hover {
+    background-color: darkgreen;
+}
+#btn > a {
+    text-decoration: none;
+}
+
+#containerRight {
+    display: flex;
+    border: 1px solid blue;
+    height: 100vh;
+    width: 20rem;
+}
