@@ -10,8 +10,8 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.486), black), url('IMAGES/backOnepiece.jpg');
-    background-size: cover;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.486), black), url('IMAGES/backOnepiece.jpg') no-repeat;
+    background-size: cover; 
     background-position: center;
 }
 
@@ -24,7 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #23252b44;
+    background: #23252b73;
     box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
     padding: 0 100px;
     transition: 0.6s;
@@ -73,7 +73,7 @@ header{
   
   .menu-item .sub-menu{
     position: absolute;
-    background: #23252B;
+    background: #23252b73;
     top: 74px;
     line-height: 40px;
     list-style: none;
@@ -104,7 +104,7 @@ header{
   }
   
   .menu-item .sub-menu .sub-item a{
-    color: #fff;
+    color: #ffffff;
     font-size: 1em;
     text-decoration: none;
     padding: 15px 30px;
@@ -120,7 +120,7 @@ header{
   
   .more .more-menu{
     position: absolute;
-    background: #23252b57;
+    background: #23252b73;
     list-style: none;
     top: 0;
     left: 100%;
@@ -158,7 +158,7 @@ header{
     header .navigation .menu{
       position: fixed;
       display: block;
-      background: #23252b46;
+      background: #23252bc4;
       min-width: 350px;
       height: 100vh;
       top: 0;
@@ -188,7 +188,7 @@ header{
       position: relative;
       top: 0;
       transform: translateX(10px);
-      background: rgba(255, 255, 255, 0.1);
+      background: #23252bc4;
       border-radius: 5px;
       overflow: hidden;
       display: none;
@@ -220,7 +220,7 @@ header{
       position: relative;
       left: 0;
       transform: translateY(0);
-      background: rgba(255, 255, 255, 0.1);
+      background: #23252b73;
       border-radius: 5px;
       display: none;
     }
@@ -398,7 +398,11 @@ header{
   }
 
   @media screen and (max-width: 767px) {
-
+    body {
+      background-image: url(IMAGES/backOnepiece.jpg)no-repeat;
+      width: 100vw;
+      height: 100%;
+    }
     #principalContainer {
       flex-direction: column;
       height: auto;
@@ -407,7 +411,7 @@ header{
     #containerLeft {
       width: 100%;
       align-items: center;
-      margin-bottom: 2rem;
+      margin-bottom: rem;
     }
   
     #containerLeft #poster {
@@ -418,6 +422,7 @@ header{
   
     #containerMiddle {
       width: 100%;
+      margin-top: -10rem;
     }
   
     #contentMiddle {
@@ -444,12 +449,12 @@ header{
     }
   
     #personagens {
-      grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
     }
   
     .personagem img {
-      width: 40px;
-      height: 40px;
+      width: 80px;
+      height: 80px;
     }
   
     .personagem p {
