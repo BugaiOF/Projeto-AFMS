@@ -15,10 +15,11 @@ header{
   top: 0;
   left: 0;
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #23252B;
+  background: #23252b73;
   box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
   padding: 0 100px;
   transition: 0.6s;
@@ -67,7 +68,7 @@ header .navigation .menu{
 
 .menu-item .sub-menu{
   position: absolute;
-  background: #23252B;
+  background: #23252bb9;
   top: 74px;
   line-height: 40px;
   list-style: none;
@@ -98,7 +99,7 @@ header.sticky .menu-item .sub-menu{
 }
 
 .menu-item .sub-menu .sub-item a{
-  color: #fff;
+  color: #ffffff;
   font-size: 1em;
   text-decoration: none;
   padding: 15px 30px;
@@ -114,7 +115,7 @@ header.sticky .menu-item .sub-menu{
 
 .more .more-menu{
   position: absolute;
-  background: #23252B;
+  background: #23252be3;
   list-style: none;
   top: 0;
   left: 100%;
@@ -152,7 +153,7 @@ header.sticky .menu-item .sub-menu{
   header .navigation .menu{
     position: fixed;
     display: block;
-    background: #23252b;
+    background: #23252bc4;
     min-width: 350px;
     height: 100vh;
     top: 0;
@@ -182,7 +183,7 @@ header.sticky .menu-item .sub-menu{
     position: relative;
     top: 0;
     transform: translateX(10px);
-    background: rgba(255, 255, 255, 0.1);
+    background: #23252bc4;
     border-radius: 5px;
     overflow: hidden;
     display: none;
@@ -214,7 +215,7 @@ header.sticky .menu-item .sub-menu{
     position: relative;
     left: 0;
     transform: translateY(0);
-    background: rgba(255, 255, 255, 0.1);
+    background: #23252b73;
     border-radius: 5px;
     display: none;
   }
