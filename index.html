@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <title>os melhores da 7° arte</title>
 </head>
 <body>
@@ -49,32 +51,14 @@
    </header>
     <main>
         <section> 
-            <div class="carousel" >
-                <div class="slide">
-                  <img src="IMAGES/one-piece.jpg" alt="Image 1">
-                  <div class="slide-text">one piece</div>
-                </div>
-                <div class="slide">
-                  <img src="IMAGES/evangelion.jpg" alt="Image 2">
-                  <div class="slide-text">Evangelion</div>
-                </div>
-                <div class="slide">
-                  <img src="IMAGES/oregairu.jpg" alt="Image 3">
-                  <div class="slide-text">Oregairu</div>
-                </div>
-                <div class="slide">
-                  <img src="IMAGES/alderaminOnTheSky.jpg" alt="Image 4">
-                  <div class="slide-text">Alderamin On The Sky</div>
-                </div>
-                <div class="slide">
-                  <img src="IMAGES/iSoldMyLife.jpg" alt="Image 5">
-                  <div class="slide-text">I Sold My Life For Ten Thousand Yen Per Year</div>
-                </div>
-                <div class="slide">
-                  <img src="IMAGES/ballroomeyoukoso.jpg" alt="Image 6">
-                  <div class="slide-text">Ballroom & Youkoso</div>
-                </div>
-              </div>
+          <div class="gallery js-flickity"
+          data-flickity-options='{ "wrapAround": true }'>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          </div>
         </section>
         <section class="cards-wrapper">
             <div class="card-grid-space">

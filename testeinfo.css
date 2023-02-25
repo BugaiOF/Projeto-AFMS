@@ -343,6 +343,7 @@ header{
 
 #btn > a {
     text-decoration: none;
+    
 }
 
 #sinopse {
@@ -383,6 +384,7 @@ header{
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
       align-items: center;
+      
     }
   
   .personagem img {
@@ -391,6 +393,7 @@ header{
     width: 50px;
     height: 50px;
     border-radius: 40%;
+    Object-fit: cover;
   }
   
   .personagem p {
@@ -461,6 +464,7 @@ header{
     .personagem img {
       width: 80px;
       height: 80px;
+      Object-fit: cover;
     }
   
     .personagem p {

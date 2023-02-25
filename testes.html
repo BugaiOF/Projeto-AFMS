@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
     <title>campo de testes</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Heebo:400,700|Open+Sans:400,700');
@@ -15,6 +17,29 @@
 
 * {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }
 
 body {
@@ -209,6 +234,16 @@ a {
     <button onclick="heart()">Clique aqui para adicionar um coração</button>
     <div id="countDisplay">Corações: 0</div>
 
+
+
+    <div class="gallery js-flickity"
+    data-flickity-options='{ "wrapAround": true }'>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    <div class="gallery-cell"></div>
+    </div>
 
    
       <section class="cards-wrapper">
