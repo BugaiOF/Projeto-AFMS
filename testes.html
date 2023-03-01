@@ -376,16 +376,36 @@ a {
       </section>
 
 
-
     <script>
-let count = Number(localStorage.getItem('count')) || 0;
-        document.getElementById("countDisplay").innerHTML = `Corações: ${count}`;
+let favoritos = [];
 
-        function heart() {
-        count++;
-        localStorage.setItem('count', count);
-        document.getElementById("countDisplay").innerHTML = `Corações: ${count}`;
+// Função para adicionar um item à lista de favoritos
+function adicionarFavorito(item) {
+  // Verifica se o item já foi adicionado aos favoritos
+  if (!favoritos.some(f => f.id === item.id)) {
+    // Adiciona o item à lista de favoritos
+    favoritos.push(item);
+
+    // Armazena o array de favoritos em um cookie
+    document.cookie = `favoritos=${JSON.stringify(favoritos)};path=/`;
+
+    // Redireciona o usuário para a página de favoritos
+    window.location.href = 'favoritos.html';
+  }
 }
+
+// Exemplo de como adicionar um botão "Favoritar" a cada item
+const listaDeItens = document.getElementById('lista-de-itens');
+itens.forEach(item => {
+  const itemHtml = `
+    <div class="item">
+      <h2>${item.nome}</h2>
+      <p>${item.descricao}</p>
+      <button onclick="adicionarFavorito(${JSON.stringify(item)})">Favoritar</button>
+    </div>
+  `;
+  listaDeItens.innerHTML += itemHtml;
+});
     </script>
 </body>
 </html> 
